@@ -1,5 +1,5 @@
 import { AxiosPromise, AxiosResponse } from "axios";
-import { Attributes } from "./Attributes";
+
 
 interface ModelAttributes<T> {
   set(value: T): void;
@@ -53,7 +53,8 @@ export class Model<T extends HasId> {
     this.sync
       .save(this.attributes.getAll())
       .then((response: AxiosResponse): void => {
-        this.trigger("save");
+        this.trigger("save", );
+        console.log(response)
       })
       .catch(() => {
         this.trigger("error");
