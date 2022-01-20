@@ -5,8 +5,8 @@ A hard coded framework with typescript, is able to change the name of the user o
 
 # start json server : 
     json-server -w db.json
-It will be located on the port 3000
+It will be located on port 3000
 
    #  start app:
     parcel index.html
-It will be located on the port 1234
+It will be located on port 1234
